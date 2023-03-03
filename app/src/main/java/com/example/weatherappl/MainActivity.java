@@ -100,7 +100,7 @@ class GeoCodeLocation {
                     if (result != null) {
                         message.what = 1;
                         Bundle bundle = new Bundle();
-                        result = "Address: " + locationAddress +"Latitude and Longitude:" + latitude + "\n" + longitude;
+                        result = "Address: " + locationAddress +"\nLatitude: " + latitude + "\nLongitude: " + longitude;
                         bundle.putString("address", result);
                         message.setData(bundle);
                     } else {
